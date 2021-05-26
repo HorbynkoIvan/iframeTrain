@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+<body>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css" id="gwd-lightbox-style">
+    .gwd-lightbox {
+        overflow: hidden;
+    }
+</style>
+<style type="text/css" id="gwd-text-style">
+    p {
+        margin: 0px;
+    }
+
+    h1 {
+        margin: 0px;
+    }
+
+    h2 {
+        margin: 0px;
+    }
+
+    h3 {
+        margin: 0px;
+    }
+</style>
+
+<style type="text/css">
+    .gwd-page-content {
+        background-color: #ffffff;
+        max-width: 1600px;
+        margin: auto;
+    }
+
+    .gwd-page-size {
+        width: 1920px;
+        height: 3000px;
+    }
+
+    .gwd-div-5xno {
+        width: 100%;
+        height: 100%;
+    }
+
+    .effect {
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    @media (min-width: 768px) {
+        .effect {
+            font-size: 13px;
+        }
+    }
+
+    @media (min-width: 1110px) {
+        .effect {
+            font-size: 14px;
+        }
+    }
+
+    .clock {
+        display: flex;
+        flex-direction: row;
+        padding-top: 41px;
+    }
+
+    .clock-img {
+        width: 68px;
+        height: 100%;
+        margin-right: 20px;
+    }
+
+    .clock-claim {
+        color: rgb(33, 54, 44);
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        padding-top: 19px;
+    }
+
+    @media (min-width: 768px) {
+        .clock-claim {
+            font-size: 26px;
+        }
+    }
+
+    .block1 {
+        background-color: #eaf9f8;
+        background-repeat: no-repeat;
+        padding-top: 77px;
+    }
+
+    @media (min-width: 768px) {
+        .block1 {
+            max-height: 546px;
+            overflow: hidden;
+            background-image: url('https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/block_1.jpg');
+            background-position: top center;
+            background-size: cover;
+            height: 100%;
+        }
+    }
+
+    .content {
+        max-width: 1140px;
+        margin: auto;
+        padding: 0 15px;
+    }
+
+    .header {
+        width: 100%;
+        color: rgb(33, 54, 44);
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        padding-top: 8%;
+        font-weight: bold;
+    }
+
+    @media (min-width: 768px) {
+        .header {
+            width: 67%;
+            font-size: 38px;
+        }
+    }
+
+    .logo img {
+        margin: auto;
+        max-width: 270px;
+    }
+
+    .logo-bottom img {
+        margin: auto;
+        max-width: 240px;
+    }
+
+    .logo {
+        margin: auto;
+        width: 100%;
+        display: block;
+    }
+
+    .masks img {
+        margin: auto;
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .masks {
+            display: none;
+        }
+    }
+
+    .block2-header {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 43px;
+    }
+
+    .header2 {
+        background: #078842;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        padding: 5px 10px;
+        display: inline-block;
+        margin-bottom: 14px;
+    }
+
+    @media (min-width: 768px) {
+        .header2 {
+            font-size: 40px;
+        }
+    }
+
+    .block2 {
+        padding: 0 50px;
+        padding-top: 58px;
+        background: url('https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/top.jpg') top center no-repeat;
+        background-size: contain;
+    }
+
+    .block2 h3 {
+        color: #21362c;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+    }
+
+    @media (min-width: 768px) {
+        .block2 h3 {
+            font-size: 30px;
+        }
+    }
+
+    sup {
+        font-size: 10px;
+    }
+
+    .label {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .label span {
+        background: #078842;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        padding: 5px 10px;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .ingredients {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    @media (min-width: 768px) {
+        .ingredients {
+            font-size: 12px;
+        }
+    }
+
+    @media (min-width: 1110px) {
+        .ingredients {
+            font-size: 12px;
+            max-width: 200px;
+        }
+    }
+
+    .ing-1 {
+        background: #ce2727;
+        padding: 5px 10px;
+    }
+
+    .ing-2 {
+        background: #005e31;
+        padding: 5px 10px;
+    }
+
+    .ing-3 {
+        background: #e5430a;
+        padding: 5px 10px;
+    }
+
+    .ing-4 {
+        background: #0999d4;
+        padding: 5px 10px;
+    }
+
+    .ing-5 {
+        background: #a2634f;
+        padding: 5px 10px;
+    }
+
+    .ing-6 {
+        background: #00927c;
+        padding: 5px 10px;
+    }
+
+    .ing-7 {
+        background: #000000;
+        padding: 5px 10px;
+    }
+
+    .ing-8 {
+        background: #42a57b;
+        padding: 5px 10px;
+    }
+
+    .ing-9 {
+        background: #06360e;
+        padding: 5px 10px;
+    }
+
+    .ing-10 {
+        background: #d98595;
+        padding: 5px 10px;
+    }
+
+    .ing-11 {
+        background: #d04a5b;
+        padding: 5px 10px;
+    }
+
+    .ing-12 {
+        background: #011c47;
+        padding: 5px 10px;
+    }
+
+    .mask,
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        /*padding: 5px 20px;*/
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .mask {
+        flex-basis: 100%;
+        padding: 0 15px;
+    }
+
+    .wrap {
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px 0;
+        padding-left: 5px;
+        min-height: 150px;
+    }
+
+    @media (min-width: 768px) {
+        .wrap {
+            padding: 0;
+        }
+
+        .mask {
+            padding: 0;
+            flex-basis: 33%;
+            padding: 0;
+        }
+    }
+
+    @media (min-width: 1110px) {
+        .wrap {
+            padding: 4% 0 7% 15px;
+        }
+
+        .new-masks .wrap {
+            padding: 10% 0 28px 15px;
+        }
+    }
+
+    .block-of-masks {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 3%;
+    }
+
+    .new-masks {
+        border: 4px solid #078842;
+    }
+
+    .img-wrap {
+        max-width: 100%;
+    }
+
+    .img-wrap img {
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .img-wrap {
+            max-width: 50%;
+        }
+    }
+
+    .skin {
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: -0.2px;
+    }
+
+    @media (min-width: 768px) {
+        .skin {
+            font-size: 12px;
+        }
+    }
+
+    @media (min-width: 1110px) {
+        .skin {
+            font-size: 12px;
+        }
+    }
+
+    .block3 {
+        padding-bottom: 4%;
+    }
+
+    .block3 .header {
+        text-align: center;
+        margin: auto;
+        padding-top: 24px;
+        margin-bottom: 33px;
+    }
+
+    .block3 .content {
+        /*max-width: 1440px;*/
+    }
+
+    .row {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .col-3 {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .col-3 img {
+        width: 100%;
+        max-width: 295px;
+        margin: auto;
+        display: block;
+    }
+
+    @media (min-width: 1110px) {
+        .col-3 {
+            width: 30%;
+            margin: 0 auto;
+        }
+    }
+
+    h4 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .block3 p {
+        margin: 0px;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .block4 {
+        background: url('https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/block_4.jpg') center;
+        background-size: cover;
+        padding: 3rem 0;
+    }
+
+    .block4 p {
+        margin: 0px;
+        text-align: left;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .block4 .row {
+        margin-bottom: 62px;
+    }
+
+    .block4 .content {
+        max-width: 1140px;
+    }
+
+    .block4 .img-wrap {
+        max-width: 100%;
+    }
+
+    @media (min-width: 728px) {
+        .block4 .img-wrap {
+            max-width: 31%;
+            padding-left: 94px;
+        }
+    }
+
+    @media (min-width: 1110px) {
+        .block4 .wrap {
+            padding: 0 0 0 64px;
+        }
+    }
+
+    p.big {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 26px;
+        margin-bottom: 19px;
+        line-height: 96%;
+    }
+
+    @media (min-width: 728px) {
+        p.big {
+            font-size: 41px;
+        }
+    }
+
+    p.small {
+        font-size: 26px;
+    }
+
+    .footnote {
+        font-size: 10px;
+        font-family: 'Raleway', sans-serif;
+        color: #1d0a0d;
+        padding: 2rem;
+        text-align: center;
+        max-width: 1290px;
+        margin: auto;
+    }
+</style>
+
+<div class="gwd-page-content gwd-page-size gwd-div-5xno">
+    <div class="block1">
+        <div class="content">
+            <div class="logo">
+                <img id="block_2_1"
+                     src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/Garnier_Logo_UA_.png"
+                     class="logo" alt="Garnier"/>
+            </div>
+            <h1 class="header">Спробуй нові тканинні маски від Garnier</h1>
+
+            <div class="clock">
+                <img id="block_2_2"
+                     src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/_______________-______.png"
+                     class="clock-img" alt="5 хвилин"/>
+                <p class="clock-claim">ІНТЕНСИВНИЙ ДОГЛЯД<br/>ЛИШЕ ЗА 5 ХВИЛИН</p>
+            </div>
+            <div class="masks">
+                <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/masks.jpg"
+                     class="masks-img" alt="Нові тканинні маски від Garnier"/>
+            </div>
+        </div>
+    </div>
+    <div class="block2">
+        <div class="block2-header">
+            <h2 class="header2">ОНЛАЙН МАСК-БАР</h2>
+            <h3>ОБЕРИ СВОЮ МАСКУ</h3>
+        </div>
+        <div class="label">
+            <span>новинки<sup>1</sup></span>
+        </div>
+
+        <div class="new-masks block-of-masks">
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/2.jpg"
+                         alt="ТКАНИННА МАСКА Garnier ГІАЛУРОНОВА КИСЛОТА + ЕКСТРАКТ КАВУНА"/>
+                </div>
+
+                <div class="wrap">
+                    <span class="effect">НАДАЄ ПРУЖНОСТІ <br/>ТА РОЗГЛаДЖУЄ</span>
+                    <div class="ingredients ing-1"><p>ГІАЛУРОНОВА КИСЛОТА<br/>+ЕКСТРАКТ КАВУНА</p></div>
+                    <span class="skin">ДЛЯ ШКІРИ ОБЛИЧЧЯ<br/>З ОЗНАКАМИ ВІКОВИХ ЗМІН</span>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/3.jpg"
+                         alt="ТКАНИННА МАСКА Garnier НІКОТИНАМІД + ЕКСТРАКТ ЛИСТОВОЇ КАПУСТИ"/>
+                </div>
+                <div class="wrap">
+                    <span class="effect">ОЧИЩУЄ<br/>ТА ЗБАЛАНСОВУЄ</span>
+                    <div class="ingredients ing-2"><p>НІКОТИНАМІД<br/>+ЕКСТРАКТ ЛИСТОВОЇ <br/>КАПУСТИ</p></div>
+                    <span class="skin">ДЛЯ ШКІРИ ОБЛИЧЧЯ<br/>СХИЛЬНОЇ ДО ЖИРНОСТІ</span>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/4.jpg"
+                         alt="ТКАНИННА МАСКА Garnier ВІТАМІН Cg + ЕКСТРАКТ АНАНАСУ"/>
+                </div>
+                <div class="wrap">
+                    <span class="effect">ЗМЕНШУЄ ТЬМЯНІСТЬ<br/>ТА ОЗНАКИ ВТОМИ</span>
+                    <div class="ingredients ing-3"><p>ВІТАМІН Cg<br/>+ЕКСТРАКТ АНАНАСУ</p></div>
+                    <span class="skin">ДЛЯ ТЬМЯНОЇ ШКІРИ<br/>З ОЗНАКАМИ ВТОМИ</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-of-masks">
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/5.jpg"
+                         alt="ТКАНИННА МАСКА Garnier ЕКСТРАКТ ГРАНАТУ + ГІАЛУРОНОВА КИСЛОТА"/>
+                </div>
+
+                <div class="wrap">
+                    <span class="effect">ТОНІЗУЄ<br/>ТА НАДАЄ СЯЯННЯ</span>
+                    <div class="ingredients ing-4"><p>ЕКСТРАКТ ГРАНАТУ<br/>+ГІАЛУРОНОВА КИСЛОТА</p></div>
+                    <span class="skin">ДЛЯ зневодненої<br/>шкіри обличчя</span>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/6.jpg"
+                         alt="ТКАНИННА МАСКА Garnier КОКОСОВЕ МОЛОЧКО + ГІАЛУРОНОВА КИСЛОТА"/>
+                </div>
+                <div class="wrap">
+                    <span class="effect">ІНТЕНСИВНО ЖИВИТЬ<br/>ТА НАДАЄ СЯЯННЯ</span>
+                    <div class="ingredients ing-5"><p>КОКОСОВЕ МОЛОЧКО<br/>+ГІАЛУРОНОВА КИСЛОТА</p></div>
+                    <span class="skin">ДЛЯ СУХОЇ ТА ТЬМЯНОЇ<br/>ШКІРИ ОБЛИЧЧЯ</span>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/7.jpg"
+                         alt="ТКАНИННА МАСКА Garnier ОРГАНІЧНИЙ АЛОЕ ВЕРА + ГІАЛУРОНОВА КИСЛОТА"/>
+                </div>
+                <div class="wrap">
+                    <span class="effect">ЗВОЛОЖУЄ ТА ОСВІЖАЄ<br/>ШКІРУ ОБЛИЧЧЯ</span>
+                    <div class="ingredients ing-6"><p>ОРГАНІЧНИЙ АЛОЕ ВЕРА<br/>+ГІАЛУРОНОВА КИСЛОТА</p></div>
+                    <span class="skin">ДЛЯ ВСІХ ТИПІВ ШКІРИ,<br/>НАВІТЬ ЧУТЛИВОЇ</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-of-masks">
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/8.jpg"
+                         alt="ТКАНИННА МАСКА Garnier ЕКСТРАКТ ЧОРНИХ ВОДОРОСТЕЙ + ГІАЛУРОНОВА КИСЛОТА"/>
+                </div>
+
+                <div class="wrap">
+                    <span class="effect">ОЧИЩУЄ ТА ЗВУЖУЄ<br/>ПОРИ ШКІРИ ОБЛИЧЧЯ</span>
+                    <div class="ingredients ing-7"><p>ЕКСТРАКТ<br/>ЧОРНИХ ВОДОРОСТЕЙ<br/>+ГІАЛУРОНОВА КИСЛОТА</p></div>
+                    <span class="skin">ДЛЯ ШКІРИ ОБЛИЧЧЯ<br/>З РОЗНИРЕНИМИ ПОРАМИ</span>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/9.jpg"
+                         alt="ТКАНИННА МАСКА Garnier ЕКСТРАКТ ЗЕЛЕНОГО ЧАЮ + ГІАЛУРОНОВА КИСЛОТА"/>
+                </div>
+                <div class="wrap">
+                    <span class="effect">ОСВІЖАЄ ТА ОЧИЩУЄ<br/>ШКІРУ ОБЛИЧЧЯ</span>
+                    <div class="ingredients ing-8"><p>ЕКСТРАКТ ЗЕЛЕНОГО ЧАЮ<br/>+ГІАЛУРОНОВА КИСЛОТА</p></div>
+                    <span class="skin">ДЛЯ НОРМАЛЬНОЇ ТА<br/>КОМБІНОВАНОЇ ШКІРИ ОБЛИЧЧЯ</span>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/10.jpg"
+                         alt="ТКАНИННА МАСКА Garnier ЕКСТРАКТ ЗЕЛЕНОГО ЧАЮ + ГІАЛУРОНОВА КИСЛОТА"/>
+                </div>
+                <div class="wrap">
+                    <span class="effect">ОЧИЩУЄ ТА МАТУЄ<br/>ШКІРУ ОБЛИЧЧЯ</span>
+                    <div class="ingredients ing-9"><p>ЕКСТРАКТ ЗЕЛЕНОГО ЧАЮ<br/>+ГІАЛУРОНОВА КИСЛОТА</p></div>
+                    <span class="skin">ДЛЯ ШКІРИ ОБЛИЧЧЯ<br/>СХИЛЬНОЇ ДО ЖИРНОГО БЛИСКУ</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="block-of-masks">
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/11.jpg"
+                         alt="ТКАНИННА МАСКА Garnier ЕКСТРАКТ РОМАШКИ + ГІАЛУРОНОВА КИСЛОТА"/>
+                </div>
+
+                <div class="wrap">
+                    <span class="effect">ЗАСПОКОЮЄ ТА НАДАЄ <br/>ВІДЧУТТЯ КОМФОРТУ</span>
+                    <div class="ingredients ing-10"><p>ЕКСТРАКТ РОМАШКИ<br/>+ГІАЛУРОНОВА КИСЛОТА</p></div>
+                    <span class="skin">ДЛЯ СУХОЇ ТА ЧУТЛИВОЇ<br/>ШКІРИ ОБЛИЧЧЯ</span>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/12.jpg"
+                         alt="ТКАНИННА МАСКА Garnier ЕКСТРАКТ ВИНОГРАДНИХ КІСТОЧОК + ГІАЛУРОНОВА КИСЛОТА"/>
+                </div>
+                <div class="wrap">
+                    <span class="effect">ЗВОЛОЖУЄ ТА ОСВІЖАЄ<br/>ШКІРУ ОБЛИЧЧЯ</span>
+                    <div class="ingredients ing-11"><p>ЕКСТРАКТ ВИНОГРАДНИХ<br/>КІСТОЧОК<br/>+ГІАЛУРОНОВА КИСЛОТА</p>
+                    </div>
+                    <span class="skin">ДЛЯ ШКІРИ З ОЗНАКАМИ <br/>ВІКОВИХ ЗМІН</span>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/13.jpg"
+                         alt="ТКАНИННА МАСКА Garnier ЕКСТРАКТ ВОЛОШКИ + ГІАЛУРОНОВА КИСЛОТА"/>
+                </div>
+                <div class="wrap">
+                    <span class="effect">ЗВОЛОЖУЄ, ВІДНОВЛЮЄ<br/>ТА ЗМЕНШУЄ ОЗНАКИ ВТОМИ</span>
+                    <div class="ingredients ing-12"><p>ЕКСТРАКТ ВОЛОШКИ<br/>+ГІАЛУРОНОВА КИСЛОТА</p></div>
+                    <span class="skin">ДЛЯ ШКІРИ З ОЗНАКАМИ <br/>ВТОМИ</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="block3">
+        <div class="content">
+            <h3 class="header">Як використовувати маску?</h3>
+            <div class="row">
+                <div class="col-3">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/step1.jpg"
+                         class="gwd-image-a68n gwd-grp-1xfc"/>
+                    <h4>КРОК 1</h4>
+                    <p>Відкрийте маску та нанесіть на <br/>попередньо очищене обличчя. <br/>Розгладьте маску по
+                        контурах.</p>
+                </div>
+                <div class="col-3">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/step2.jpg"
+                         class="gwd-image-a68n gwd-grp-1xfc"/>
+                    <h4>КРОК 2</h4>
+                    <p>Залиште маску на 5 хвилин <br/>або 15 хвилин, після чого зніміть.</p>
+                </div>
+                <div class="col-3">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/step3.jpg"
+                         class="gwd-image-a68n gwd-grp-1xfc"/>
+                    <h4>КРОК 3</h4>
+                    <p>Розподіліть залишки масажними <br/>рухами або видаліть за допомогою <br/>ватного диску.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="block4">
+        <div class="content">
+            <div class="row">
+                <div class="img-wrap">
+                    <img src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/face.png"
+                         class="gwd-image-a68n gwd-grp-1xfc"/>
+                </div>
+                <div class="wrap">
+                    <p class="small">У 2021 році </p>
+                    <p class="big">ми прибрали захисну <br/>
+                        пластикову плівку з<br/>
+                        тканинних масок, </p>
+                    <p class="small">заощадивши таким чином <br/>понад 108 тонн пластику</p>
+                </div>
+            </div>
+
+            <div class="logo-bottom">
+                <img id="block_2_3"
+                     src="https://cdnparftop.parfums.ua/public/upload/newAdminUpload/RichContent/666414/white-logo.png"
+                     class="logo"/>
+            </div>
+        </div>
+
+    </div>
+    <div class="footnote">
+        <p>1 Серед тканинних масок Garnier від лютого 2021. 2 Гарньєр Скін Нечралз Тканинна маска «Розгладжуюча» з
+            високою концентрацією гіалуронової кислоти для шкіри обличчя з ознаками вікових змін, 15г. 3 Гарньєр Скін
+            Нечралз Тканинна маска «Детокс» з високою концентрацією нікотинаміда для шкіри обличчя, схильної до
+            жирності, 15 г. 4 Гарньєр Скін Нечралз Тканинна маска «Проти утоми» з високою концентрацією вітаміну Cg для
+            тьмяної шкіри обличчя з ознаками утоми, 15 г.
+            5 Скін Нечралз Зволоження + Аква бомба, тканинна зволожуюча маска навіть для зневодненої шкіри обличчя. 6
+            Гарньєр Скін Нечралз «Живлення-Бомба», тканинна маска з кокосовим молоком для сухої та тьмяної шкіри
+            обличчя. 7 Гарньєр Скін Нечралз Гіалуронова Тканинна Алое-маска для шкіри обличчя. 8Скін Нечралз Очищуюче
+            Вугілля, чорна тканинна маска для шкіри обличчя з розширеними порами. 9 Скін Нечралз Зволоження + Свіжість,
+            тканинна зволожуюча маска для нормальної та комбінованої шкіри обличчя. 10 Скін Нечралз Очищуюче Вугілля,
+            чорна тканинна маска для шкіри обличчя, схильної до появи жирного блиску. 11 Скін Нечралз Зволоження +
+            Комфорт, тканинна зволожуюча маска для сухої та чутливої шкіри обличчя. 12 Гарньєр Скін Нечралз, «Аква
+            Бомба», суперзволожуюча тканинна маска для шкіри обличчя з ознаками вікових змін. 13 Гарньєр Скін Нечралз,
+            «Аква Бомба», суперзволожуюча нічна тканинна маска для шкіри обличчя з ознаками втоми.</p>
+    </div>
+</div>
+
+
+</body>
+
+</html>

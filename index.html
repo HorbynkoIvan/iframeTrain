@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+<button
+        id="submit_payment"
+        data-order-phone="380501111111"
+        data-order-number="2323232323"
+        class="btn btn-success my-2"
+>Оплатить
+</button>
+<hr>
+<iframe id="iframe_payment" src="./content.html"
+        style="width: 100%; height: 400px;"></iframe>
+
+<script>
+    document.addEventListener("DOMContentLoaded", ready);
+
+    function ready() {
+        const iframePayment = document.getElementById('iframe_payment');
+        const submitPayment = document.getElementById('submit_payment');
+
+        iframePayment.addEventListener('load', function () {
+            const iframeWindow = iframePayment.contentWindow;
+            const iframeDocument = iframePayment.contentDocument;
+            const iframeHeading = iframeDocument.querySelector('h1');
+
+            //part1 send query to iframe
+            iframeWindow.postMessage('hello', 'http://localhost:63342/iframe/content.html');
+            //iframeWindow.postMessage({task: 'dataheight'}, 'http://localhost:63342/iframe/content.html');
+            //part1 send query to iframe
+
+            submitPayment.addEventListener('click', function () {
+                console.log(iframeWindow)
+                console.log(iframeDocument)
+
+                iframeDocument.body.style.backgroundColor = "#ff0000";
+                iframeHeading.textContent = "This text was changed"
+            })
+        })
+
+        //part3 get info from iframe
+        window.addEventListener('message', function (e) {
+            if (e.origin !== "test.ua") return;
+            console.log(e.data['test'])
+        })
+        //part3 get info from iframe
+    }
+
+</script>
+</body>
+</html>

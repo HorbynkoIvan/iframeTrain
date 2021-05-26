@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content</title>
+</head>
+<body>
+<h1>Content of Iframe</h1>
+
+<script>
+    document.addEventListener("DOMContentLoaded", ready);
+
+    function ready() {
+        window.addEventListener('message', function (e) {
+            console.log("origin ", e.origin);
+            const task = e.data['task'];
+            let msg;
+            console.log("origin task ", task)
+
+            //part2 get request from page and return info
+            switch (task) {
+                case 'dataheight':
+                    msg = {task: 'dataheight', test: 'test'}
+                    e.source.postMessage(msg, e.origin)
+                    break;
+                default:
+                    msg = {task: 'unknown', test: 'WTF'}
+                    e.source.postMessage(msg, e.origin)
+                    break;
+            }
+        })
+    }
+</script>
+</body>
+</html>
